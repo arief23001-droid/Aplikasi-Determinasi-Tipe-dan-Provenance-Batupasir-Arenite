@@ -227,7 +227,7 @@ use_uploaded = uploaded is not None
 # ----------------------
 # Editable table (5 samples)
 # ----------------------
-st.markdown("### 1) Isi data mineral (5 sampel). Edit angka lalu tekan tombol PDF.")
+st.markdown("### 1) Isi data mineral (5 sampel)")
 default_table = pd.DataFrame({
     "Sample": [f"S{i+1}" for i in range(5)],
     "Qm": [30,25,20,40,15],
@@ -439,7 +439,7 @@ def build_all_samples_pdf(df):
 # ----------------------
 # Display Streamlit plotting & UI
 # ----------------------
-st.markdown("### 2) Plot results (lihat & adjust vertex if necessary)")
+st.markdown("### 2) Plot results")
 col1, col2 = st.columns([2,1])
 
 # display image for selected diagram
@@ -512,3 +512,4 @@ st.download_button("Download current diagram (PNG)", data=png_buf, file_name="cu
 
 st.markdown("---")
 st.caption("Notes: interpretasi gabungan di PDF dibuat sesuai format yang diminta. Pada lampiran disertakan 4 plot gabungan yang menampilkan posisi semua sampel pada masing-masing diagram.")
+
